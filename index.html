@@ -1005,6 +1005,16 @@
                 grid-template-columns: 1fr;
             }
         }
+        .btn-tableau {
+            background: linear-gradient(135deg, #00d4ff, #0099ff);
+            color: white;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .btn-tableau:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 212, 255, 0.5);
+        }
     </style>
 </head>
 <body>
@@ -1051,7 +1061,7 @@
                         Me contacter
                         <i class="fas fa-envelope"></i>
                     </a>
-                    <a href="tableau-synthèse.pdf" class="btn btn-primary" download>
+                    <a href="tableau-synthèse.pdf" class="btn btn-tableau" download>
                         Tableau de synthèse
                         <i class="fas fa-table"></i>
                     </a>
