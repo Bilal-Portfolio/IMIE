@@ -1480,10 +1480,7 @@
                     <p style="color: var(--primary); font-weight: 600; margin-bottom: 1rem;">
                         <i class="fas fa-calendar"></i> En cours
                     </p>
-                    <a href="#" class="file-attachment" onclick="alert('Veuillez ajouter votre certification PDF'); return false;">
-                        <i class="fas fa-file-pdf"></i>
-                        Voir la certification
-                    </a>
+                    
                 </div>
             </div>
         </div>
@@ -1725,31 +1722,12 @@
             <div class="contact-form">
                 <h3 style="color: var(--primary); margin-bottom: 2rem;">Envoyez-moi un message</h3>
                 <form id="contactForm">
-                    <div class="form-group">
-                        <label>Nom complet</label>
-                        <input type="text" required>
+                    <div style="text-align: center;">
+                        <a href="mailto:bilalshop.b08@gmail.com?subject=Contact depuis le portfolio&body=Bonjour Bilal," class="btn btn-primary">
+                            M’écrire par email
+                            <i class="fas fa-envelope"></i>
+                        </a>
                     </div>
-    
-                    <div class="form-group">
-                        <label>Email</label>
-                        <input type="email" required>
-                    </div>
-    
-                    <div class="form-group">
-                        <label>Sujet</label>
-                        <input type="text" required>
-                    </div>
-    
-                    <div class="form-group">
-                        <label>Message</label>
-                        <textarea required></textarea>
-                    </div>
-    
-                    <button type="submit" class="btn btn-primary" style="width: 100%;">
-                        Envoyer le message
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                </form>
             </div>
         </div>
     </section>
@@ -1893,11 +1871,7 @@
         });
 
         // Form submission
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Message envoyé avec succès ! Je vous répondrai dans les plus brefs délais.');
-            this.reset();
-        });
+        
         // ===== Flux RSS CERT-FR =====
 fetch("https://api.rss2json.com/v1/api.json?rss_url=https://www.cert.ssi.gouv.fr/feed/")
     .then(response => response.json())
